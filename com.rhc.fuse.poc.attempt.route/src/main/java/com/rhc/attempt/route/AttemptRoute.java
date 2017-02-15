@@ -27,5 +27,4 @@ public class AttemptRoute extends RouteBuilder {
 //    public void setJmsComponent(ComponentResolver componentResolver) {
 //        LOG.info("jms component resolved");
 //    }
-
 }
