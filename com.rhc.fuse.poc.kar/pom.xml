@@ -12,6 +12,14 @@
     <name>Fuse POC Kar</name>
     <dependencies>
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_1.1_spec</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.rhc</groupId>
             <artifactId>com.rhc.fuse.poc.attempt.route</artifactId>
             <version>${project.version}</version>
