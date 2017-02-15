@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+
+    <feature name="com.rhc.fuse.poc.feature" version="0.0.1" install="auto">	
+        <feature>camel-scr</feature>
+        <bundle>mvn:com.rhc/com.rhc.fuse.poc.attempt.route/${project.version}</bundle>
+    </feature>
+
+</features>
