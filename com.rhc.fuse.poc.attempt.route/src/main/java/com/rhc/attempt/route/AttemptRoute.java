@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author dcnorris
  */
-@Component(service = org.apache.camel.RoutesBuilder.class)
+@Component(service = RouteBuilder.class)
 public class AttemptRoute extends RouteBuilder {
 
     private static final Logger LOG = LoggerFactory.getLogger(AttemptRoute.class);

@@ -58,7 +58,7 @@ public class CamelRunner {
     }
 
     @Reference(service = RouteBuilder.class,
-            cardinality = ReferenceCardinality.AT_LEAST_ONE, policy = ReferencePolicy.DYNAMIC,
+            cardinality = ReferenceCardinality.OPTIONAL, policy = ReferencePolicy.DYNAMIC,
             policyOption = ReferencePolicyOption.GREEDY, unbind = "unbindRouteBuilder")
     public void addRouteBuilder(RouteBuilder routeBuilder) {
         if (context != null) {

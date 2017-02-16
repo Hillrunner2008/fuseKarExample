@@ -31,10 +31,10 @@
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-camel</artifactId>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-jms</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-test</artifactId>
@@ -57,13 +57,8 @@
         </dependency>
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-jms_2.0_spec</artifactId>
-            <version>1.0-alpha-2</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.jms</groupId>
-            <artifactId>javax.jms-api</artifactId>
-            <version>2.0.1</version>
+            <artifactId>geronimo-jms_1.1_spec</artifactId>
+            <version>1.1.1</version>
         </dependency>
     </dependencies>
     <build>
@@ -74,7 +69,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Embed-Dependency>geronimo-jms_2.0_spe,javax.jms-api </Embed-Dependency>             
+                        <!--<Embed-Dependency>geronimo-jms_1.1_spec</Embed-Dependency>-->             
                         <!--This instruction tells the maven bundle plugin to process 
                          all SCR annotations and include the component declarations in 
                         our manfiest file. -->
@@ -82,6 +77,11 @@
                         <!-- This is included as a best practice, by default this plugin 
                         will expose all packages. In our case, we do not want to expose 
                         any packages.-->
+                        <Import-Package> 
+                           !javax.jms; version="[1.1,2)",
+                            javax.jms; version="[2,3)",
+                            *
+                        </Import-Package>
                         <Export-Package></Export-Package>
                     </instructions>
                 </configuration>
