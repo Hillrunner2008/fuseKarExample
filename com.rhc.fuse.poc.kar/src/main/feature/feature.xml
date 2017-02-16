@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <features>
 
-    <feature name="com.rhc.fuse.poc.kar" version="${project.version}" install="auto">	
+    <feature name="com.rhc.fuse.poc.kar" version="${project.version}" install="auto">
         <feature>camel-scr</feature>
+        <feature>activemq-camel</feature>
     </feature>
 
 </features>

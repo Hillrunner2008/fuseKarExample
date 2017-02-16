@@ -57,7 +57,13 @@
         </dependency>
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-jms_1.1_spec</artifactId>
+            <artifactId>geronimo-jms_2.0_spec</artifactId>
+            <version>1.0-alpha-2</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>javax.jms-api</artifactId>
+            <version>2.0.1</version>
         </dependency>
     </dependencies>
     <build>
@@ -68,6 +74,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                        <Embed-Dependency>geronimo-jms_2.0_spe,javax.jms-api </Embed-Dependency>             
                         <!--This instruction tells the maven bundle plugin to process 
                          all SCR annotations and include the component declarations in 
                         our manfiest file. -->

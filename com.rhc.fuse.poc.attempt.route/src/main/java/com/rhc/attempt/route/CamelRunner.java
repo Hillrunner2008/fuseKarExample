@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * @author jeckste
+ * @author dcnorris
  */
 @Component(immediate = true)
 public class CamelRunner {
@@ -81,5 +81,5 @@ public class CamelRunner {
             }
         });
     }
-
+    
 }
