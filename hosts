@@ -1,2 +1,4 @@
 [fuse_dev]
 192.168.121.235 ansible_uer=vagrant ansible_private_key_file="{{ dev_ssh_key }}"
+[fuse_prod]
+192.168.121.229 ansible_uer=vagrant ansible_private_key_file="{{ prod_ssh_key }}"
