@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: copy team city build artifact to fuse_dev
+      copy: src={{ build_artifact }} dest=/tmp/
+
