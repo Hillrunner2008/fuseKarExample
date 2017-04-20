@@ -1,6 +1,6 @@
 ---
 - hosts: all
   tasks:
-    - name: copy team city build artifact to fuse_dev
+    - name: copy team city build artifact to fuse_prod
       copy: src={{ build_artifact }} dest=/tmp/
 
